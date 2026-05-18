@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Practical Test — [Replace with your question title]</title>
+  <title>NGO Website Header</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,13 +11,23 @@
   <!--
     ============================================================
     SUZA Web Technologies — Practical Test
-    Student Name      : [WRITE YOUR FULL NAME]
-    Registration No.  : [WRITE YOUR REG NUMBER]
-    Question Number   : Q[XXX]
-    Question Title    : [PASTE YOUR ASSIGNED QUESTION TITLE]
+    Student Name      : KHEIR JUMA IBRAHIM
+    Registration No.  : 24BIT001
+    Question Number   : Q 038
+    Question Title    : NGO Website Header
 
-    YOUR TASK (paste from QUESTIONS.docx):
-    [PASTE THE FULL TASK DESCRIPTION FROM THE QUESTIONS DOCUMENT]
+    TASK (paste from QUESTIONS.docx):
+    [Build an NGO WEBSITE HEADER. Include the NGO logo and tagline, navigation (About, Programmes, Impact, 
+Get Involved, News), and two prominent buttons: 'Donate' and 'Volunteer'. Build the page with valid HTML5 
+(DOCTYPE, lang, charset, viewport, page title) using semantic elements (header, main, footer, and 
+section/article/nav where they fit). Put all styles in styles.css — NO inline style attributes and NO <style> tags 
+in the HTML. Use Flexbox or CSS Grid for the layout. Include at least 2 images (each with descriptive alt text — 
+you may use the SVGs in assets/images/ or upload your own under that folder) and at least 2 working links, 
+where at least one is an external link that opens in a new tab with rel="noopener noreferrer". Define your 
+colours using CSS variables (custom properties). Add hover effects on interactive elements (links, buttons, 
+cards). Add at least one @media query so the page still works on a 375px-wide phone screen. Write your full 
+name, registration number, and question number in the top comment of both files and in the page footer. Do 
+NOT use JavaScript and do NOT use any CSS framework (Bootstrap, Tailwind, etc.) — pure HTML + CSS only. ]
 
     REQUIREMENTS FOR EVERY QUESTION:
     1. Use semantic HTML5 (header, main, footer, section, article where appropriate).
@@ -32,47 +42,59 @@
   -->
 
   <header class="page-header">
-    <img src="assets/images/logo.svg" alt="SUZA logo" class="logo" width="56" height="56" />
+    <img src="c:\Users\HP\OneDrive\Documentos\WEB 2026\web works\sunlight-morning-foggy-forest-beautiful-natural-landscape_921026-10339.avif" alt="SUZA logo" class="logo" width="56" height="56" />
     <div>
-      <h1>Web Technologies — Practical Test</h1>
+      <h1>NGO Website Header — Practical Test</h1>
       <p class="subtitle">State University of Zanzibar · SCCMS</p>
     </div>
-  </header>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#programmes">Programmes</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="https://www.unicef.org/" target="_blank" rel="noopener noreferrer" class="btn donate-btn">
+                Donate
+            </a>
+
+            <a href="#volunteer" class="btn volunteer-btn">
+                Volunteer
+            </a>
+        </div>
+    </header>
 
   <main>
-    <!-- ============================================================
-         REPLACE EVERYTHING INSIDE <main> WITH YOUR SOLUTION
-         ============================================================ -->
 
-    <section class="solution">
-      <h2>Your Solution Goes Here</h2>
-      <p>
-        Delete this placeholder and build the component described in your
-        assigned question. Remember: at least <strong>2 images</strong> and
-        <strong>2 links</strong>.
-      </p>
+        <section class="hero">
+            <article class="hero-content">
+                <h2>Together We Can Change Lives</h2>
+                <p>
+                    We support education, healthcare, and sustainable development
+                    projects to improve lives across communities.
+                </p>
 
-      <img src="assets/images/banner.svg" alt="Sample banner — replace with your own content" />
+                <a href="#programmes" class="learn-more">Learn More</a>
+            </article>
 
-      <p>
-        Helpful reference:
-        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">
-          MDN Web Docs
-        </a>
-        ·
-        <a href="https://massoudhamad.github.io/web-technologies/index.html" target="_blank" rel="noopener noreferrer">
-          Course site
-        </a>
-      </p>
-    </section>
+            <article class="hero-image">
+                <img src="c:\Users\HP\OneDrive\Documentos\WEB 2026\web works\Screenshot 2026-05-09 192411.png"
+                     alt="Volunteers helping children in a community programme">
+            </article>
+        </section>
 
-  </main>
+    </main>
 
   <footer class="page-footer">
     <p>
-      Submitted by: <strong>[Your Name]</strong> ·
-      Reg No: <strong>[Your Reg No]</strong> ·
-      Question: <strong>Q[XXX]</strong>
+      Submitted by: <strong>Kheir Juma Ibrahim</strong> ·
+      Reg No: <strong>24BIT001</strong> ·
+      Question: <strong>Q038</strong>
     </p>
     <p>
       <small>
